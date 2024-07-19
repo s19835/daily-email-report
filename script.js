@@ -28,7 +28,7 @@ const maileOptions = {
     attachments: [
         {
             filename: filename,
-            path: path.join(__dirname, 'attachments', filename)
+            path: path.join('./attachments', filename)
         }
     ]
 }
