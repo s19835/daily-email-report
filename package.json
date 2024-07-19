@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "daily email report using Node.js and the nodemailer package",
   "main": "script.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
