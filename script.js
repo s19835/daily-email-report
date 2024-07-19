@@ -7,12 +7,11 @@ config();
 // Email configurations, create transporter
 const transporter = nodemailer.createTransport(
     {
-        host: 'smtp.gmail.com',
-        port: 587, 
-        secure: false,
+        host: process.env.HOST, 
+        port: 2525, 
         auth: {
-            user: process.env.MAILID,
-            pass: process.env.PASSWORD
+            user: process.env.USERNAME, // host user name - mailtrap
+            pass: process.env.PASSWORD // host password - mailtrap
         }
     }
 );
@@ -37,4 +36,4 @@ const maileOptions = {
 transporter.sendMail(maileOptions, (error, info) => {
     if (error) throw new Error(error);
     else console.log('Email sent: ', info.response);
-})
+});
