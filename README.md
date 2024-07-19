@@ -10,8 +10,6 @@ Step 1: Install Required Libraries
 
 Step 2: Write the JavaScript Script
 
-- Here's an example script using Node.js and Nodemailer to send an email with an attachment:
-
 Step 3: Schedule the Script
 
 - You can use cron on Unix-based systems or Task Scheduler on Windows, similar to the Python example.
